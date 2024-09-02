@@ -16,7 +16,7 @@ The project uses the "Top 10000 Songs on Spotify 1960-Now" dataset, which includ
 
 ## 📂 Project Structure
 
-The project is structured as following:
+The project is structured as follows:
 
 1. **Data Exploration and Preprocessing:**
    - **Loading the Dataset:** Import the "Top 10000 Songs on Spotify 1960-Now" dataset.
@@ -39,10 +39,10 @@ The project is structured as following:
 ## 🚀 Installation
 To run this project, you need to have Python and the following libraries installed:
 
--numpy
--pandas
--scikit-learn
+- numpy
+- pandas
+- scikit-learn
 You can install these libraries using the following command:
 ```bash
-pip install numpy pandas tensorflow scikit-learn
+pip install numpy pandas scikit-learn
 ```
