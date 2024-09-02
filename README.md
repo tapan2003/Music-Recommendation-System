@@ -1,5 +1,7 @@
 # 🎵 Content-Based Music Recommendation System 🎶
 
+An intelligent system that recommends songs based on their intrinsic features, tailored to your musical preferences.
+
 ## 📚 Table of Contents
 - [🎧 Overview](#-overview)
 - [📊 Dataset](#-dataset)
