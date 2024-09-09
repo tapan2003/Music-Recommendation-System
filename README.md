@@ -19,22 +19,21 @@ The project uses the "Top 10000 Songs on Spotify 1960-Now" dataset, which includ
 The project is structured as follows:
 
 1. **Data Exploration and Preprocessing:**
-   - **Loading the Dataset:** Import the "Top 10000 Songs on Spotify 1960-Now" dataset.
-   - **Feature Selection:** Analyze key features like artist genres, danceability, energy, and more.
-   - **Data Cleaning:** Handle missing values, normalize data, and prepare it for modeling.
+   - **Loading the Dataset:** Imported the "Top 10000 Songs on Spotify 1960-Now" dataset, which contains both textual and numerical features.
+   - **Feature Selection:** Focused on key features like track name, artist name(s), artist genres, danceability, energy, acousticness, and more to use for recommendation purposes.
+   - **Data Cleaning:** Handle missing values, normalize data, dropped duplicate entries and prepare it for modeling.
 
 2. **Feature Engineering:**
-   - **Textual Features:** Use TF-IDF vectorization for textual features like artist genres.
-   - **Numerical Features:** Scale numerical features such as danceability and energy.
-   - **Combining Features:** Merge all relevant features into a single feature matrix for similarity computation.
+   - **Textual Features:** Applied TF-IDF vectorization to textual features like artist genres and artist names separately to transform these into numerical vectors, enabling similarity calculations.
+   - **Numerical Features:** Scaled numerical features such as danceability, energy, acousticness, etc., ensuring all features are on the same scale for accurate similarity measurements.
+   - **Combining Features:** Combined the TF-IDF vectors and scaled numerical features into a single feature matrix. This matrix was then used for calculating similarities between songs.
 
 3. **Similarity Calculation:**
-   - **Cosine Similarity:** Implement cosine similarity to measure the closeness between songs.
-   - **Recommendation Function:** Build a function to recommend songs based on input criteria.
+   - **Cosine Similarity:** Implemented cosine similarity to measure the closeness between songs based on their feature vectors. This helped quantify how similar two songs are in terms of both their textual and numerical attributes.
+   - **Recommendation Function:** Developed a custom function to recommend songs based on a given input song. This function uses cosine similarity to find the top 5 most similar songs.
 
 4. **Model Evaluation and Testing:**
-   - **Testing Recommendations:** Test the recommendation system with various songs.
-   - **Performance Evaluation:** Analyze the effectiveness of the recommendations.
+   - **Testing Recommendations:** Tested the recommendation system with various input songs, including popular tracks like "Love Story" and "You Belong With Me", to validate its performance.
 
 ## 🚀 Installation
 To run this project, you need to have Python and the following libraries installed:
